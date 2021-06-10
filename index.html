@@ -1,13 +1,33 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html lang="en">
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Feliz</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div id="img"><img width="60px" src="./cogu.png" alt="cogumelo_Mario"></div>
+        <div id="conteudo-top">
+            <nav>
+                <a class="" href="">Skills</a>
+                <a class="" href="">Projetos</a>
+                <a class="" href="">Sobre</a>
+                <a class="" href="">Contatos</a>
+                <a id="button" href="" onmouseover="">Download CV</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
